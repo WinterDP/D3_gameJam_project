@@ -59,7 +59,7 @@ public class PlayerController : MonoBehaviour
 
     private void movePlayer(){
         //altera a posição do rigidBody para a posição calculada entre a posição atual e a desejada pelo input do player
-        rigidBody.MovePosition(rigidBody.position + (movement * playerAttributes.playerSpeed * Time.fixedDeltaTime));
+        rigidBody.MovePosition(rigidBody.position + (movement * playerAttributes.getPlayerSpeed() * Time.fixedDeltaTime));
 
         
     
